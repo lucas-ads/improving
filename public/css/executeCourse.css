@@ -1,0 +1,149 @@
+.navbar-course {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #E9ECEF;
+    border-left: solid 5px rgb(19, 28, 87);
+    height: 100%;
+    z-index: 8;
+    overflow: hidden;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.navbar-course.collapsed {
+    width: 0px;
+}
+
+.navbar-course.collapsed li{
+    display: none;
+}
+
+.navbar-course:not(.collapsed){
+    width: 300px;
+}
+
+@media (min-width: 1200px) {
+    .navbar-course:not(.collapsed){
+        width: 450px;
+    }
+}
+
+.navbar-course-menu li{
+    width: 100%;
+    border-radius: 0 !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+.navbar-course-menu .unitTitle{
+    background-color: rgb(19, 28, 87);
+    border: solid 1px #E9ECEF;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-course-menu .unitTitle span.text{
+    width: 90%;
+    display: inline-block;
+}
+
+.navbar-course-menu .unitTitle span.showItems{
+    display: inline-block;
+    background-color: white;
+    border-radius: 2em;
+    position: absolute;
+    top:30%;
+    right: 20px;
+    width: 23px;
+    padding-left: 5px;
+    height: 23px;
+}
+
+.navbar-course-menu .unitTitle span.showItems::before{
+    content: "\f077";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: rgba(19, 28, 87,0.9);
+}
+
+.navbar-course-menu .unitTitle.collapsed span.showItems::before{
+    content: "\f078";
+}
+
+.navbar-course-menu .itemTitle{
+    background-color: rgb(205, 205, 205);
+    border-left: solid 1px white;
+}
+
+.navbar-course-menu .itemTitle a{
+    color:  rgb(19, 28, 87);
+}
+
+.navbar-course-menu .itemTitle.acessado{
+    background-color: white;
+}
+
+.navbar-course-menu .itemTitle.disable{
+    pointer-events: none;
+    cursor: default;
+    background-color: #17a2b8;
+}
+
+.navbar-course-menu .itemTitle.disable a{
+    color: white;
+}
+
+.navbar-course-menu .conclusion a{
+    color: white;
+}
+
+.navbar-course-menu .conclusion.conclusionDisable a{
+    pointer-events: none;
+    cursor: default;
+    color: #9ca2a8;
+}
+
+.navbar-course-menu .itemTitle>a>span{
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.navbar-course-menu .itemTitle.videolesson span::before{
+    content: "\f04b";
+}
+
+.navbar-course-menu .itemTitle.link span::before{
+    content: "\f15c";
+}
+
+.navbar-course-menu .itemTitle.test span::before{
+    content: "\f059";
+}
+
+.navbar-course-menu{
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.navbar-course .btn-expand-collapse{
+    font-size: 2em;
+    padding-right: 35px;
+    color: rgb(19, 28, 87);
+}
+
+#container-item-course .itemLink{
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+#container-item-course .itemLink a i{
+    font-weight: bold;
+    color: rgb(19, 28, 87);
+}

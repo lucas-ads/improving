@@ -1,0 +1,69 @@
+#conteudo .titulo{
+    text-align: center;
+}
+
+#conteudo .row.options{
+    justify-content: space-between;
+}
+
+#conteudo .row.options a{
+    width: 100%;
+    display: block;
+}
+
+#conteudo .titulo h1{
+    font-size: 1.5em;
+    margin: 1em auto;
+}
+
+@media screen and (max-width: 575px){
+    #conteudo .row.options a{
+        padding-top:2.4em;
+        padding-bottom:2.4em;
+        margin-bottom: 1.5em;
+    }
+
+    #conteudo .row.options h2{
+        font-size: 1.5em;
+    }
+
+    #conteudo .row.options a i{
+        width: 25%;
+        text-align: right;
+        margin-right: 0.4em;
+        font-size: 2em;
+    }
+    
+}
+
+@media screen and (min-width: 576px){
+    #conteudo .row.options a{
+        padding-top:2.4em;
+        padding-bottom:2.4em;
+        text-align: center;
+    }
+    
+    #conteudo .row.options a i{
+        font-size: 2.5em;
+    }
+
+    #conteudo .row.options h2{
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #conteudo .row.options a i{
+        font-size: 3.5em;
+    }
+
+    #conteudo .row.options h2{
+        font-size: 2em;
+    }
+
+    #conteudo .titulo h1{
+        font-size: 2.5em;
+        margin: 1em auto;
+    }
+}

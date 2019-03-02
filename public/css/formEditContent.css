@@ -1,0 +1,69 @@
+.card-unit{
+    margin-bottom: 15px;
+}
+
+.card-unit, .card-unit *{
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.card-unit .card-header .button-group button,
+.card-unit .card-header .moveUnit span,
+.card-unit .card-body .listItemsUnit li .button-group-item button{
+    width: 35px;
+}
+
+.card-unit .card-header .button-group,
+.card-unit .card-header .title,
+.card-unit .card-header .moveUnit,
+.card-unit .card-body .listItemsUnit li>*{
+    float: left;
+    display: inline-block;
+}
+
+.card-unit .card-body{
+    padding: 0;
+}
+
+.card-unit .card-body .listItemsUnit{
+    min-height: 20px;
+}
+
+.card-unit .listItemsUnit li.videolesson .itemTitle::before{
+    content: "\f04b";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+    font-weight: 900;
+}
+
+.card-unit .listItemsUnit li.link .itemTitle::before{
+    content: "\f15c";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+    font-weight: 900;
+}
+
+.card-unit .listItemsUnit li.test .itemTitle::before{
+    content: "\f059";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+    font-weight: 900;
+}
+
+.card-unit .listItemsUnit > li.item{
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+}
+
+.card.safeEdit .btnModalDeleteItem,
+.card.safeEdit .btnModalDeleteUnit,
+.card.safeEdit #btnModalAddUnit,
+.card.safeEdit .card-body .dropdown-addItems,
+.card.safeEdit .card-header .btnMoveUnit,
+.card.safeEdit .card-body .item .btnMoveItem
+{
+    display: none;
+}
