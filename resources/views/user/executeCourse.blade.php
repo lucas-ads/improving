@@ -9,8 +9,11 @@
 @section('conteudo')
     <div class="container" id="container-item-course">
         <div class="row align-items-center">
+            <div class="col-12 mb-1 mt-4 bg-light">
+                <h1 class="h5">{{$course->title}} <i class="fas fa-chevron-right"></i> {{$thisItem->unit->title}}</h1>
+            </div>
             <div class="col-6 col-sm-8 col-md-9 col-lg-10 pr-0">
-                <h1 class="h4 d-none d-sm-block my-4">{{$thisItem->title}}</h1>
+                <h1 class="h4 d-none d-sm-block my-2">{{$thisItem->title}}</h1>
             </div>
             <div class="col-12 col-sm-4 col-md-3 col-lg-2 text-right pl-1 my-2">
                 @php
